@@ -7,7 +7,7 @@ sh "curl -X POST http://admin:119767fb81f22e2f10d8594e4201717e53@http://18.219.2
     "scope": "GLOBAL", \
     "id": "apicredentias", \
     "username": "apicredentials", \
-    "password": "P@$$W0rd", \
+    "password": "pass", \
     "description": "apicredentials", \
     "stapler-class": "com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl" \
   } \
