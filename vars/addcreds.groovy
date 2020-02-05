@@ -9,6 +9,6 @@ sh "curl -X POST http://admin:119767fb81f22e2f10d8594e4201717e53@18.219.210.127:
     "username": "username_here", \
     "password": "password_here", \
     "$class": "com.cloudbees.plugins.credentials.impl.UsernamePasswordCredentialsImpl" \
-  }
+  } \
 }' "
 }
