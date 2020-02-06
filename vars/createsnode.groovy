@@ -1,5 +1,5 @@
 def call(){
-httpRequest authentication: 'confluence_cred1', 
+httpRequest authentication: 'jenkins_auth', 
 	customHeaders: [[maskValue: false, name: 'Content-Type', value: 'application/json'], 
                     [maskValue: false, name: 'Accept', value: 'application/json']],
     
