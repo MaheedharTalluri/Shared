@@ -40,13 +40,7 @@ def resultJson = jsonSlurper.parse(reader)
      println("total number of builds by vicky:"+countv) 
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
-sh 'echo """{ \
-	\"name\": \"Suneel\", \
-	\"Builds\": \"'${countS}'\", \
-	\"Successful\": \"'${success_sunil}'\", \
-	\"Failed\": \"'${fail_sunil}'\" \
-}""" > suneel.json'
-	 
+
 	 
 	 
 }    
@@ -56,4 +50,12 @@ def call()
 {
     sh "curl -XGET -g http://52.14.229.175:8080/asynchPeople/api/json?depth=3 -o username.json"
     create()
+	
+	sh 'echo """{ \
+	\"name\": \"Suneel\", \
+	\"Builds\": \"'${countS}'\", \
+	\"Successful\": \"'${success_sunil}'\", \
+	\"Failed\": \"'${fail_sunil}'\" \
+}""" > suneel.json'
+	 
 }
