@@ -53,7 +53,7 @@ def resultJson = jsonSlurper.parse(reader)
 def call()
 {
     sh "curl -XGET -g http://52.14.229.175:8080/asynchPeople/api/json?depth=3 -o username.json"
-	sh "sudo touch user.json" 
+	sh "nano user.json" 
     create()
 	
 	sh 'echo """{ \
