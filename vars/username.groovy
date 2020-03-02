@@ -40,7 +40,7 @@ def resultJson = jsonSlurper.parse(reader)
      println("total number of builds by vicky:"+countv) 
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
-     File file = new File("user.json")
+    File file = new File("user.json")
 	file.write "{\n"
 	file << "\"name\": \"Suneel\", \n" 
 	 file << "\"Builds\": \"'${countS}'\", \n"
