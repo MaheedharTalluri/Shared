@@ -40,7 +40,13 @@ def resultJson = jsonSlurper.parse(reader)
      println("total number of builds by vicky:"+countv) 
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
-	
+	writeFile file: 'user.json', text: '{ \
+	\"name\": \"Suneel\", \
+	\"Builds\": \"'${countS}'\", \
+	\"Successful\": \"'${success_sunil}'\", \
+	\"Failed\": \"'${fail_sunil}'\" \
+}'
+sh 'ls -l user.json'
 	
 }
      
@@ -51,13 +57,7 @@ def call()
 	sh 'echo "{" >> user.json' 
 	
     create()
-	writeFile file: 'user.json', text: '{ \
-	\"name\": \"Suneel\", \
-	\"Builds\": \"'${countS}'\", \
-	\"Successful\": \"'${success_sunil}'\", \
-	\"Failed\": \"'${fail_sunil}'\" \
-}'
-sh 'ls -l user.json'
+	
 	/*sh 'echo """{ \
 	\"name\": \"Suneel\", \
 	\"Builds\": \"'${countS}'\", \
