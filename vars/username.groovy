@@ -60,7 +60,7 @@ def call()
 	
 	/*sh 'echo """{ \
 	\"name\": \"Suneel\", \
-	\"Builds\": \"'${countS}'\", \
+	\"Builds\": \"${countS}\", \
 	\"Successful\": \"'${success_sunil}'\", \
 	\"Failed\": \"'${fail_sunil}'\" \
 }""" > suneel.json'*/
