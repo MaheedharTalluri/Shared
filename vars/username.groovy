@@ -41,10 +41,10 @@ def resultJson = jsonSlurper.parse(reader)
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
 	writeFile file: 'user.json', text: "{ \
-	\"name\": \"Suneel\", \n
-	\"Builds\": \"${countS}\", \n
-	\"Successful\": \"${success_sunil}\", \n
-	\"Failed\": \"${fail_sunil}\" \n
+	\"name\": \"Suneel\", \
+	\"Builds\": \"${countS}\", \
+	\"Successful\": \"${success_sunil}\", \
+	\"Failed\": \"${fail_sunil}\" \
 }"
 
 	
