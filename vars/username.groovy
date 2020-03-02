@@ -46,7 +46,7 @@ def resultJson = jsonSlurper.parse(reader)
 	\"Successful\": \"'${success_sunil}'\", \
 	\"Failed\": \"'${fail_sunil}'\" \
 }'
-sh 'user.json'
+sh 'ls -l user.json'
 	
 }
      
