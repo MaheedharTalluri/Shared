@@ -40,10 +40,7 @@ def resultJson = jsonSlurper.parse(reader)
      println("total number of builds by vicky:"+countv) 
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
-   new File('/home/ec2-user','user.json').withWriter('utf-8') { 
-	   writer -> writer.writeLine '{' 
-      }  
-}    
+	writeFile([file: 'file.txt', text: filetxt])
      
 
 def call()
