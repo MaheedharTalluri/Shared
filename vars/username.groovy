@@ -46,7 +46,7 @@ def resultJson = jsonSlurper.parse(reader)
 	\"Successful\": \"'${success_sunil}'\", \
 	\"Failed\": \"'${fail_sunil}'\" \
 }'
-sh 'ls -l user.json'
+
 	
 }
      
@@ -64,6 +64,6 @@ def call()
 	\"Successful\": \"'${success_sunil}'\", \
 	\"Failed\": \"'${fail_sunil}'\" \
 }""" > suneel.json'*/
-	sh "sudo cp /home/ec2-user/user.json /var/lib/jenkins/workspace/${JOB_NAME}"
+	
 	 
 }
