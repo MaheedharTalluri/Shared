@@ -45,7 +45,7 @@ def resultJson = jsonSlurper.parse(reader)
 	file << "\"name\": \"Suneel\", \n" 
 	 file << "\"Builds\": \"'${countS}'\", \n"
 	file << "\"Successful\": \"'${success_sunil}'\", \n"
-	file << "\"Failed\": \"'${fail_sunil}'\" \"
+	file << "\"Failed\": \"'${fail_sunil}'\" \n"
 	file << "}\n"
 }    
      
