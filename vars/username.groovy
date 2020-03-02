@@ -40,7 +40,7 @@ def resultJson = jsonSlurper.parse(reader)
      println("total number of builds by vicky:"+countv) 
     println("total number of success builds by vicky:"+success_vicky) 
      println("total number of failed builds by vicky:"+fail_vicky) 
-   new File('.','user.json').withWriter('utf-8') { 
+   new File('/home/ec2-user','user.json').withWriter('utf-8') { 
 	   writer -> writer.writeLine '{' 
       }  
 }    
@@ -53,11 +53,12 @@ def call()
 	
     create()
 	
-	sh 'echo """{ \
+	/*sh 'echo """{ \
 	\"name\": \"Suneel\", \
 	\"Builds\": \"'${countS}'\", \
 	\"Successful\": \"'${success_sunil}'\", \
 	\"Failed\": \"'${fail_sunil}'\" \
-}""" > suneel.json'
+}""" > suneel.json'*/
+	sh "sudo cp /home/ec2-user/user.json /var/lib/jenkins/workspace/${JOB_NAME}"
 	 
 }
